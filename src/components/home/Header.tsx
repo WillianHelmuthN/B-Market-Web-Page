@@ -39,7 +39,7 @@ export default function Header() {
   }, [menuOpen]);
 
   return (
-    <header className="w-full py-4 px-6 md:px-12 flex justify-between items-center sticky top-0 backdrop-blur-md bg-white/70 dark:bg-black/70 z-50">
+    <header className="w-full py-4 px-6 md:px-12 flex justify-between items-center sticky top-0  bg-white/70 dark:bg-black/70 z-50">
       <Link href="/" className="flex items-center">
         <Image
           src="/app-logo.svg"
@@ -73,9 +73,6 @@ export default function Header() {
         </Link>
       </nav>
       <div className="flex items-center space-x-4">
-        <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors">
-          Download App
-        </button>
 
         {/* Botão do menu mobile */}
         <button
@@ -103,14 +100,14 @@ export default function Header() {
 
       {/* Menu mobile */}
       {menuOpen && (
-        <div className="md:hidden fixed inset-0 bg-black bg-opacity-50 z-50 transition-opacity duration-300">
+        <div className="md:hidden fixed inset-0 bg-black bg-opacity-50 z-50 transition-opacity duration-300 text-center">
           <div
-            className="fixed right-0 top-0 h-full w-64 bg-white dark:bg-gray-900 shadow-lg transform transition-transform duration-300 ease-in-out"
+            className="fixed right-0 top-0 h-full w-full bg-white dark:bg-gray-900 shadow-lg transform transition-transform duration-300 ease-in-out"
             style={{
               transform: menuOpen ? "translateX(0)" : "translateX(100%)",
             }}
           >
-            <div className="flex justify-end p-4">
+            <div className="flex justify-end p-6">
               <button
                 onClick={() => setMenuOpen(false)}
                 className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
@@ -118,7 +115,7 @@ export default function Header() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
+                  className="h-8 w-8"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -155,7 +152,7 @@ export default function Header() {
                 Features
               </Link>
               <div className="mt-4 pt-4">
-                <button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors">
+                <button className="w-1/2 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors">
                   Download App
                 </button>
               </div>
