@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { ProdutoComparacao, TipoUnidade } from "@/utils/comparadorPrecos";
 import UnidadeSelectorAvancado from "./UnidadeSelectorAvancado";
 

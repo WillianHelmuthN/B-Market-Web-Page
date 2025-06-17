@@ -5,6 +5,25 @@ import Header from "@/components/home/Header";
 import Footer from "@/components/home/Footer";
 import Link from "next/link";
 
+// Interfaces para tipagem dos dados
+interface Feature {
+  title: string;
+  description: string;
+  details: string[];
+  status: string;
+  url?: string;
+  link?: string | null;
+}
+
+// Esta interface é usada para tipar o array 'features' definido abaixo
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+interface FeatureCategory {
+  category: string;
+  icon: React.ReactNode;
+  color: string;
+  features: Feature[];
+}
+
 // Ícones para cada categoria
 const FeatureIcons = {
   core: (
@@ -438,7 +457,7 @@ export default function FeaturesPage() {
 }
 
 // Componente para o card de feature
-function FeatureCard({ feature }: { feature: any }) {
+function FeatureCard({ feature }: { feature: Feature }) {
   return (
     <div className="p-6 h-full flex flex-col">
       <div className="flex justify-between items-start mb-4">
