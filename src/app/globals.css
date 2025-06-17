@@ -3,11 +3,22 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
+  --primary: #10b981;
+  --primary-dark: #059669;
+  --primary-light: #a7f3d0;
+  --secondary: #0ea5e9;
+  --secondary-dark: #0284c7;
+  --secondary-light: #bae6fd;
 
-@theme inline {
+  /* Adicionando variáveis de cores para o tema */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
+  --color-secondary: var(--secondary);
+  --color-secondary-dark: var(--secondary-dark);
+  --color-secondary-light: var(--secondary-light);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -16,6 +27,22 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary: #10b981;
+    --primary-dark: #059669;
+    --primary-light: #065f46;
+    --secondary: #0ea5e9;
+    --secondary-dark: #0284c7;
+    --secondary-light: #075985;
+
+    /* Atualizando variáveis para o tema escuro */
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-primary: var(--primary);
+    --color-primary-dark: var(--primary-dark);
+    --color-primary-light: var(--primary-light);
+    --color-secondary: var(--secondary);
+    --color-secondary-dark: var(--secondary-dark);
+    --color-secondary-light: var(--secondary-light);
   }
 }
 
