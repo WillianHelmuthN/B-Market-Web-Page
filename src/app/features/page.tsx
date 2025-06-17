@@ -4,7 +4,6 @@ import { useState } from "react";
 import Header from "@/components/home/Header";
 import Footer from "@/components/home/Footer";
 import Link from "next/link";
-import Image from "next/image";
 
 // Ícones para cada categoria
 const FeatureIcons = {
