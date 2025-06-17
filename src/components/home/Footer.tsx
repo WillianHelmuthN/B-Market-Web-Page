@@ -5,15 +5,15 @@ export default function Footer() {
     <footer className="w-full py-12 px-6 md:px-12 bg-gray-900 text-gray-300">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="md:col-span-2">
+          <div className="md:col-span-2 text-center md:text-left">
             <h2 className="text-2xl font-bold text-white mb-4">B-Market</h2>
-            <p className="mb-4 text-gray-400 max-w-md">
+            <p className="mb-4 text-gray-400 max-w-md mx-auto md:mx-0">
               Aplicativo que auxilia usuários a economizar nas compras através
               de funcionalidades de comparação de preços, gerenciamento de
               listas e controle de estoque doméstico.
             </p>
           </div>
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="text-lg font-semibold text-white mb-4">
               Links Rápidos
             </h3>
@@ -44,18 +44,18 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/#roadmap"
+                  href="/features"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Roadmap
+                  Features
                 </Link>
               </li>
             </ul>
           </div>
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="text-lg font-semibold text-white mb-4">Contato</h3>
             <ul className="space-y-2">
-              <li className="flex items-start">
+              <li className="flex items-start justify-center md:justify-start">
                 <svg
                   className="w-5 h-5 text-gray-400 mr-2 mt-0.5"
                   fill="none"
@@ -72,7 +72,7 @@ export default function Footer() {
                 </svg>
                 <span className="text-gray-400">contato@b-market.com</span>
               </li>
-              <li className="flex items-start">
+              <li className="flex items-start justify-center md:justify-start">
                 <svg
                   className="w-5 h-5 text-gray-400 mr-2 mt-0.5"
                   fill="none"

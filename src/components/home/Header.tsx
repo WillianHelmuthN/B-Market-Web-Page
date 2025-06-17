@@ -30,7 +30,7 @@ export default function Header() {
           Comparador
         </Link>
         <Link
-          href="/#roadmap"
+          href="/features"
           className="text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition"
         >
           Features

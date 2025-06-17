@@ -37,8 +37,8 @@ export default function HeroSection() {
               <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-full text-lg font-medium transition-colors">
                 Baixar App
               </button>
-              <Link href="/comparador">
-                <button className="border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-800 dark:text-white px-6 py-3 rounded-full text-lg font-medium transition-colors">
+              <Link href="/comparador" className="w-full sm:w-auto">
+                <button className="w-full sm:w-auto border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-800 dark:text-white px-6 py-3 rounded-full text-lg font-medium transition-colors">
                   Saiba mais
                 </button>
               </Link>
