@@ -81,9 +81,10 @@ export default function Downloads() {
                 <div className="mt-2 text-sm text-amber-700 dark:text-amber-200">
                   <p>
                     Ao instalar um arquivo APK fora da Google Play Store, você
-                    está realizando o que é conhecido como &ldquo;sideloading&rdquo;. Este
-                    processo requer que você habilite a instalação de apps de
-                    fontes desconhecidas nas configurações do seu dispositivo.
+                    está realizando o que é conhecido como
+                    &ldquo;sideloading&rdquo;. Este processo requer que você
+                    habilite a instalação de apps de fontes desconhecidas nas
+                    configurações do seu dispositivo.
                   </p>
                 </div>
               </div>
