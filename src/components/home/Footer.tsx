@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="w-full py-12 px-6 md:px-12 bg-gray-900 text-gray-300">
@@ -17,36 +19,36 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#recursos"
+                <Link
+                  href="/#recursos"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Recursos
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#comparador"
+                <Link
+                  href="/comparador"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Comparador
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#despensa"
+                <Link
+                  href="/#despensa"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Despensa
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#roadmap"
+                <Link
+                  href="/#roadmap"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Roadmap
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
