@@ -9,12 +9,16 @@ export default function CTASection() {
           Baixe agora o B-Market e transforme sua experiência de compras.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="bg-white text-emerald-600 hover:bg-gray-100 px-8 py-3 rounded-full text-lg font-medium transition-colors">
-            Download App
-          </button>
-          <button className="bg-transparent border-2 border-white hover:bg-white/10 text-white px-8 py-3 rounded-full text-lg font-medium transition-colors">
-            Ver demonstração
-          </button>
+          <a href="/downloads" className="block">
+            <button className="bg-white text-emerald-600 hover:bg-gray-100 px-8 py-3 rounded-full text-lg font-medium transition-colors">
+              Download App
+            </button>
+          </a>
+          <a href="/downloads" className="block">
+            <button className="bg-transparent border-2 border-white hover:bg-white/10 text-white px-8 py-3 rounded-full text-lg font-medium transition-colors">
+              Ver demonstração
+            </button>
+          </a>
         </div>
       </div>
     </section>

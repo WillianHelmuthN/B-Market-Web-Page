@@ -71,8 +71,20 @@ export default function Header() {
         >
           Features
         </Link>
+        <Link
+          href="/downloads"
+          className="text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition"
+        >
+          Downloads
+        </Link>
       </nav>
       <div className="flex items-center space-x-4">
+        <Link
+          href="/downloads"
+          className="hidden md:block bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors"
+        >
+          Download App
+        </Link>
 
         {/* Botão do menu mobile */}
         <button
@@ -151,10 +163,21 @@ export default function Header() {
               >
                 Features
               </Link>
+              <Link
+                href="/downloads"
+                className="text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition py-3 border-b border-gray-200 dark:border-gray-700"
+                onClick={() => setMenuOpen(false)}
+              >
+                Downloads
+              </Link>
               <div className="mt-4 pt-4">
-                <button className="w-1/2 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors">
+                <Link
+                  href="/downloads"
+                  className="w-1/2 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors"
+                  onClick={() => setMenuOpen(false)}
+                >
                   Download App
-                </button>
+                </Link>
               </div>
             </nav>
           </div>

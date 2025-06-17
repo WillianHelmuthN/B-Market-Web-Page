@@ -34,9 +34,11 @@ export default function HeroSection() {
               listas e controle da sua despensa.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-full text-lg font-medium transition-colors">
-                Baixar App
-              </button>
+              <Link href="/downloads" className="w-full sm:w-auto">
+                <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-full text-lg font-medium transition-colors w-full">
+                  Baixar App
+                </button>
+              </Link>
               <Link href="/comparador" className="w-full sm:w-auto">
                 <button className="w-full sm:w-auto border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-800 dark:text-white px-6 py-3 rounded-full text-lg font-medium transition-colors">
                   Saiba mais
@@ -46,13 +48,15 @@ export default function HeroSection() {
           </div>
           <div className="relative w-full h-[400px] md:h-[500px]">
             <div className="absolute inset-0 bg-gradient-to-r from-emerald-400/20 to-blue-500/20 rounded-2xl overflow-hidden flex items-center justify-center">
-              <Image
-                src="/app-preview.svg"
-                alt="B-Market App Preview"
-                width={300}
-                height={600}
-                className="object-contain shadow-2xl rounded-2xl"
-              />
+              <Link href="/downloads">
+                <Image
+                  src="/app-preview.svg"
+                  alt="B-Market App Preview"
+                  width={300}
+                  height={600}
+                  className="object-contain shadow-2xl rounded-2xl transition-transform hover:scale-105 cursor-pointer"
+                />
+              </Link>
             </div>
           </div>
         </div>

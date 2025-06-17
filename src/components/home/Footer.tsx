@@ -50,6 +50,14 @@ export default function Footer() {
                   Features
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/downloads"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Downloads
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="text-center md:text-left">
