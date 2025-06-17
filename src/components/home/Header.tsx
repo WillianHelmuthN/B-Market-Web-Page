@@ -9,10 +9,6 @@ export default function Header() {
 
   // Fechar o menu quando o usuário navega para outra página
   useEffect(() => {
-    const handleRouteChange = () => {
-      setMenuOpen(false);
-    };
-
     // Fechar o menu quando o usuário pressiona ESC
     const handleEscKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
